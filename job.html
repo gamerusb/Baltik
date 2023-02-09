@@ -10,11 +10,14 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 	
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
+
 	<body>
 		<div class="wrapper">
 			<header class="header">
@@ -32,7 +35,7 @@
 								<li class="menu__item"><a href="#firma" class="menu__link">O firmie</a></li>
 								<li class="menu__item"><a href="#oferta" class="menu__link">Oferta</a></li>
 								<li class="menu__item"><a href="#kontakt" class="menu__link">Kontakt</a></li>
-								<li class="menu__item"><a href="work.html" class="menu__link">Работа</a></li>
+								<li class="menu__item"><a href="job.html" class="menu__link">Работа</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -61,15 +64,38 @@
 	</div>
 </header>
 			<main class="page">
-				<div class="vacancy">
-					<div class="container _container">
-						<div class="breadcrubs__inner">
+				<div class="vacancy _container">
+					<div class="breadcrubs__inner">
+						<div class="container _container">
 							<ul class="path">
 								<li><a href="index.html">Работа <img class="path__arrow" src="./img/arrow.svg" alt=""></a></li>
-								<li><a href="job.html">Все вакансии <img class="path__arrow"	 src="./img/arrow.svg" alt=""></a></li>
+								<li><a href="job.html">Все вакансии <img class="path__arrow" aria-current="page src="./img/arrow.svg" alt=""></a></li>
 							</ul>
 						</div>
 					</div>
+					<div class="filter _container">
+    <div class="filter-header">
+        <div class="filter-header__search">
+            <input class="filter-header__input" id="search-input" placeholder="Вакансия, ключевое слово, названи фирмы" type="text">
+            <input class="filter-header__input" id="search-input2" placeholder="Город" type="text">
+            <button id="search-button" class="filter-header__button">Search</button>
+        </div>
+    </div>
+    <div class="filters">
+        <div class="filters__main">
+            <select name="select" class="select">
+                <option value="Lodz">Lodz</option>
+                <option value="Krakow">Krakow</option>
+                <option value="Gdansk">Gdansk</option>
+            </select>
+        </div>
+    </div>
+    <section class="resultContent">
+        <div id="results" class="filter__results">
+        
+        </div>
+    </section>
+</div>
 					<div class="vacancy__connect">
 						<div class="connect _container">
 							<h1 class="connect__title globalBlock-title">Связаться с нами</h1>
@@ -100,10 +126,14 @@
 									<button type="submit">Отправить</button>
 								</form>
 							</div>
-						
 						</div>
 					</div>
 				</div>
+				<button id="scrollBtn">
+					<svg viewBox="0 0 24 24">
+					  <path d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z" />
+					</svg>
+				  </button>
 			</main>
 			<footer class="footer">
 	<div class="footer__container _container">
@@ -186,6 +216,7 @@
 
 		<!-- Swiper -->
 <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="js/vendors.min.js"></script>
 <script src="js/app.min.js"></script>
 
