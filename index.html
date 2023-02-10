@@ -11,6 +11,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 	
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
@@ -68,7 +69,7 @@
 			<section class="page__main">
 				<div class="main-slider__container _container">
 					<div class="main-slider__body">
-						<div class="main-slider__content  content-main">
+						<div class="main-slider__content  wow animate__fadeIn content-main">
 							<h1 class="content-main__title">Nasi pracownicy - Twój sukces!</h1>
 							<div class="content-main__text">Skorzystaj z oferty profesjonalnej agencji pracy i zyskaj
 								wykwalifikowanych pracowników.</div>
@@ -97,25 +98,14 @@
 									<div class="calculator-price__set1">
 										<h1 class="calculator-price__title">Wiek pracowników</h1>
 										<div class="calculator-price__spans">
-											<span>18</span>
-											<span>80</span>	
+											<span>Min </span>
+											<span>Max</span>
 										</div>	
 										<div class="calculator-price__main">
-											<div class="calculator-price__slider" id="range-slider"></div>
-											<div class="calculator-price__input1">
-												<label class="calculator-price__label">
-													<input type="number" min="1" max="100" placeholder="1" id="input-0" class="calculator-price__input">
-												</label>
-												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M2.1875 7H11.8125" stroke="#0A0A26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-												</svg>										
-												<label class="calculator-price__label">
-													
-													<input type="number" min="1" max="100" placeholder="50" id="input-1" class="calculator-price__input">
-												</label>
+											<div id="slider">
 											</div>
+											<input type="number" min="18" max="70" placeholder="35" class="calculator-price__label" id="input-element">		
 										</div>
-										
 										<div class="calculator-price__first">
 											<h1 class="calculator-price__title">W jakim okresie?</h1>
 											<div class="calculator-price__slider" id="range-slider2">
@@ -225,14 +215,13 @@
 						</div>
 					</section>
 				</div>
-				
 			</section>
 			<section id="firma" class="page__firma">
 				<div class="main-firma__container _container">
-					<h1 class="main-firma__title">
+					<h1 class="main-firma__title wow animate__fadeInUp">
 						O firme
 					</h1>
-					<div class="main-firma__body">
+					<div class="main-firma__body wow animate__fadeInUp animate__delay-2s">
 						<div class="main-firma__wr">
 							<div class="main-firma__inner ">
 								<div class="main-firma__text">
@@ -336,16 +325,15 @@
 					</div>
 				</div>
 			</section>
-			<section id="oferta" class="page__oferta">
+			<section id="oferta" class="page__oferta ">
 				<div class="page-oferta__container _container">
-					<div class="page-oferta">
+					<div class="page-oferta ">
 						<h1 class="page-oferta__title">Oferta
-
 							<img class="page-oferta__money" src="./img/money-bag_1f4b0.png" alt="">
 						</h1>
 					</div>
 					<div class="page-first__page">
-						<img loading="lazy" src="./img/image 90 (1).png" alt="" class="page-first__img">
+						<img loading="lazy" src="./img/image 90 (1).png" alt="" class="page-first__img wow animate__fadeInLeft">
 						<div class="page-first__text">
 							<p class="page-first__p">Outsourcing pracowniczy</p>
 							<ul>
@@ -362,7 +350,7 @@
 						</div>
 					</div>
 					<div class="page-second__page">
-						<img  loading="lazy"  src="./img/fdfd.png" alt="" class="page-second__img">
+						<img  loading="lazy"  src="./img/fdfd.png" alt="" class="page-second__img wow animate__fadeInRight">
 						<div class="page-second__text">
 							<p class="page-second__p">Praca tymczasowa</p>
 							<ul>
@@ -534,7 +522,7 @@
 				<svg class="arrow" style="display: block;">
 					<svg viewBox="0 0 24 24">
 						<path d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z" />
-					  </svg>
+					</svg>
 				</svg>
 			</button>
 			<section id="kontakt" class="location">
@@ -570,9 +558,6 @@
 					</div>
 				</div>
 			</section>
-			<div class="technical">
-				<h1 class="technical__link">TECNICAL-LINL | VERSION: 1.5.1 KALKULATOR + ADAPTIW + BD</h1>
-			</div>
 		</main>
 		<footer class="footer">
 	<div class="footer__container _container">
