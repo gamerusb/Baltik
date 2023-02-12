@@ -75,28 +75,40 @@
 						</div>
 					</div>
 					<div class="filter _container">
-    <div class="filter-header">
-        <div class="filter-header__search">
-            <input class="filter-header__input" id="search-input" placeholder="Вакансия, ключевое слово, названи фирмы" type="text">
-            <input class="filter-header__input" id="search-input2" placeholder="Город" type="text">
-            <button id="search-button" class="filter-header__button">Search</button>
-        </div>
-    </div>
-    <div class="filters">
-        <div class="filters__main">
-            <select name="select" class="select">
-                <option value="Lodz">Lodz</option>
-                <option value="Krakow">Krakow</option>
-                <option value="Gdansk">Gdansk</option>
-            </select>
+    <h2 class="filter__text">Все вакансии</h2>
+    <div class="fsdfs">
+        <div class="filters-header">
+            <div class="filters-header__inputs">
+                <input class="filter-header__input" placeholder="Вакансия, ключевое слово, названи фирмы" type="text" id="searchInput">
+                <button class="filters-header__btn" id="searchButton">Найти</button>
+            </div>
+            <div class="filters-header__group">
+                <select class="select" id="country-filter">
+                    <option value="">All</option>
+                    <option value="Warszawa">Warszawa</option>
+                    <option value="Gdansk">Gdansk</option>
+                    <option value="Kraków">Kraków</option>
+                    <option value="Słupsk">Słupsk</option>
+                    <option value="Bydgoszcz">Bydgoszcz</option>
+                  </select>
+                <select class="select" id="language-filter">
+                    <option value="">Любой</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
         </div>
     </div>
     <section class="resultContent">
-        <div id="results" class="filter__results">
-        
+        <div class="products-value">
+            <h4 class="products-value__text">Всего вакансий ( <p id="product-count"></p>) </h4>
+        </div>
+        <div class="filter__results" id="products">
+
         </div>
     </section>
 </div>
+
 					<div class="vacancy__connect">
 						<div class="connect _container">
 							<h1 class="connect__title globalBlock-title">Связаться с нами</h1>
